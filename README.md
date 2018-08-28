@@ -24,3 +24,4 @@ The `db:seed` rake task is used to insert the 1,000,000 records. It truncates th
 * Unspecified if things with no referer should be included as a top referer if applicable, I assumed so and reported the referer as `(direct)`
 * This is my first use of Sequel as an ORM and as such, I avoided trying to shoehorn the more complicated queries into its DSL instead opting for raw SQL in the controller.
 * I use `referer` per [RFC 1945](https://en.wikipedia.org/wiki/HTTP_referer#Etymology) instead of `referrer` as specified. Hopefully thats ok.
+* I opt for a basic caching policy but it obviously can be modified depending on the business requirements. That will improve/reduce performance as necessary.
