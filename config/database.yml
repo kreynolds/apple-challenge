@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  database: challenge_dev
+  user: postgres
+  template: template1
+  max_connections: 16
+
+test:
+  adapter: postgresql
+  database: challenge_test
+  user: postgres
+  template: template1
+  max_connections: 16
